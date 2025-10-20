@@ -1,4 +1,4 @@
-#include <stdio.h>  // Include standard I/O library for printf
+#include <stdio.h>  /* Include standard I/O library for printf */
 
 /**
  * main - Prints the size of various types on the system
