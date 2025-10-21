@@ -10,16 +10,10 @@ int main(void)
 char i;
 for (i = 'a'; i <= 'z'; i++)
 {
-if (i == 'q')
-{
-break;
+if (i == 'q' || i == 'e')
+continue;
+putchar (i);
 }
-if (i == 'e')
-{
-break;
-}
-}
-putchar(i);
 putchar('\n');
 return (0);
 }
