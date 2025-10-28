@@ -1,6 +1,7 @@
 #include "main.h"
 /**
- * string_toupper - converts all lowercase letters of a string to uppercase
+ * string_toupper - converts all lowercase letters of
+ * a string to uppercase
  * @s: the string to modify
  *
  * Return: pointer to the resulting string
@@ -16,5 +17,5 @@ s[i] = s[i] - ('a' - 'A');
 }
 i++;
 }
-return s;
+return (s);
 }
