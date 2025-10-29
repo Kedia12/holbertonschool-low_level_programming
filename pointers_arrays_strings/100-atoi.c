@@ -30,8 +30,6 @@ if (sign == 1 && (num > (INT_MAX - digit) / 10))
 return (INT_MAX);
 if (sign == -1 && (num > (-(INT_MIN + digit)) / 10))
 return (INT_MIN);
-num = num * 10 + digit;
-i++;
 }
-return (num *sign);
+return (int)(num * sign);
 }
