@@ -8,9 +8,10 @@
  *
  * Description: The program takes exactly 3 arguments:
  *  num1 operator num2
- *  It validates the input, selects the correct operation
- *  using get_op_func, checks for division/modulo by zero,
- *  performs the operation, and prints the result.
+ *  It validates the input, checks that the operator is a single
+ *  character, selects the correct operation using get_op_func,
+ *  checks for division/modulo by zero, performs the operation,
+ *  and prints the result.
  *
  * Return: 0 on success, exits with 98, 99, or 100 on errors
  */
@@ -22,6 +23,11 @@ if (argc != 4)
 {
 printf("Error\n");
 exit(98);
+}
+if (argv[2][1] != '\0')
+{
+printf("Error\n");
+exit(99);
 }
 op = get_op_func(argv[2]);
 if (op == NULL)
