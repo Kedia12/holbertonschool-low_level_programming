@@ -1,6 +1,19 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include "3-calc.h"
+/**
+ * main - performs simple operations using function pointers
+ * @argc: number of arguments
+ * @argv: array of argument strings
+ *
+ * Description: The program takes exactly 3 arguments:
+ *  num1 operator num2
+ *  It validates the input, selects the correct operation
+ *  using get_op_func, checks for division/modulo by zero,
+ *  performs the operation, and prints the result.
+ *
+ * Return: 0 on success, exits with 98, 99, or 100 on errors
+ */
 int main(int argc, char *argv[])
 {
 int a, b, result;
@@ -25,5 +38,5 @@ exit(100);
 }
 result = op(a, b);
 printf("%d\n", result);
-return 0;
+return (0);
 }
