@@ -23,7 +23,8 @@ if (new_node->str == NULL)
 free(new_node);
 return (NULL);
 }
-for (i = 0; str[i]; i++);
+for (i = 0; str[i]; i++)
+;
 new_node->len = i;
 new_node->next = *head;
 *head = new_node;
