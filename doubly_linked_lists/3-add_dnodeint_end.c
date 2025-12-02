@@ -16,7 +16,7 @@ new = malloc(sizeof(dlistint_t));
 if (new == NULL)
 return (NULL);
 new->n = n;
-new->next = n;
+new->next = NULL;
 if (*head == NULL)
 {
 new->prev = NULL;
