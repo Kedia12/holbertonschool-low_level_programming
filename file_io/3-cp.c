@@ -44,7 +44,7 @@ error_exit(99, "Error: Can't write to %s\n", argv[2]);
 while ((n_read = read(fd_from, buffer, sizeof(buffer))) > 0)
 {
 n_written = write(fd_to, buffer, n_read);
-if (n_written == -1 || n_written != n_read
+if (n_written == -1 || n_written != n_read)
 {
 close(fd_from);
 close(fd_to);
